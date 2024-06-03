@@ -1,16 +1,16 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import ItemList from "../ItemList/ItemList";
+import Item from "../Item/Item";
 
-function Body(props){
+function ItemList(props){
 //const[name, setName]=useState(null);
 return(
     <div>
-        <h1>Body</h1>
+        <h1>ItemList</h1>
         <h3>{JSON.stringify(props)}</h3>
-        <ItemList list={props.list}/>
+        <Item/>
     </div>
 )
 }
 
-export default Body
+export default ItemList
