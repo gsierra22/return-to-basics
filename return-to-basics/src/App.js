@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-  <Body list={list}/>
+  <Body list={list} getList={getList}/>
     </div>
   );
 }

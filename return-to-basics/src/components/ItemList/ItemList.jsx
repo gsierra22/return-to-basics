@@ -7,8 +7,11 @@ function ItemList(props){
 return(
     <div>
         <h1>ItemList</h1>
-        <h3>{JSON.stringify(props)}</h3>
-        <Item/>
+        {
+            props.list.map(item=>(
+                <Item item={item} getList={props.getList}/>
+            ))
+        }
     </div>
 )
 }
